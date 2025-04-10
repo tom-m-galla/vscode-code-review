@@ -245,7 +245,7 @@ export class ExportFactory {
         fileExtension: 'github.csv',
         storeOutside: false,
         writeFileHeader: (outputFile: string) => {
-          fs.writeFileSync(outputFile, `title,body,labels,state,assignee${EOL}`);
+          fs.writeFileSync(outputFile, `title,description,labels,state,assignee${EOL}`);
         },
         handleData: (outputFile: string, row: CsvEntry): CsvEntry => {
           row.comment = escapeEndOfLineForCsv(row.comment);
