@@ -1,6 +1,6 @@
 # vscode-code-review
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <a href="https://www.buymeacoffee.com/dkoppenhagen" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
@@ -512,6 +512,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
+      <td align="center"><a href="https://github.com/tom-m-galla"><img src="https://avatars.githubusercontent.com/u/49430806?v=4?s=100" width="100px;" alt="Thomas M. Galla"/><br /><sub><b>Thomas M. Galla</b></sub></a><br /><a href="https://github.com/tom-m-galla/vscode-code-review/commits?author=tom-m-galla" title="Code">💻</a> <a href="https://github.com/d-koppenhagen/vscode-code-review/issues?q=author%3Atom-m-galla" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://github.com/bluenick2k17"><img src="https://avatars1.githubusercontent.com/u/50033488?v=4?s=100" width="100px;" alt="Nick Dunne"/><br /><sub><b>Nick Dunne</b></sub></a><br /><a href="https://github.com/d-koppenhagen/vscode-code-review/commits?author=bluenick2k17" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/elazarcoh"><img src="https://avatars3.githubusercontent.com/u/28874499?v=4?s=100" width="100px;" alt="elazarcoh"/><br /><sub><b>elazarcoh</b></sub></a><br /><a href="https://github.com/d-koppenhagen/vscode-code-review/commits?author=elazarcoh" title="Code">💻</a> <a href="https://github.com/d-koppenhagen/vscode-code-review/issues?q=author%3Aelazarcoh" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://fr.linkedin.com/in/michel-caradec-36997650"><img src="https://avatars2.githubusercontent.com/u/12159769?v=4?s=100" width="100px;" alt="Michel Caradec"/><br /><sub><b>Michel Caradec</b></sub></a><br /><a href="https://github.com/d-koppenhagen/vscode-code-review/commits?author=michelcaradec" title="Code">💻</a> <a href="#ideas-michelcaradec" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/d-koppenhagen/vscode-code-review/issues?q=author%3Amichelcaradec" title="Bug reports">🐛</a> <a href="https://github.com/d-koppenhagen/vscode-code-review/commits?author=michelcaradec" title="Documentation">📖</a> <a href="https://github.com/d-koppenhagen/vscode-code-review/commits?author=michelcaradec" title="Tests">⚠️</a></td>

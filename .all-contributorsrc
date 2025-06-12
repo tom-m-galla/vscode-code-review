@@ -6,6 +6,19 @@
   "commit": false,
   "contributors": [
     {
+      "login": "tom-m-galla",
+      "name": "Thomas M. Galla",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49430806?v=4",
+      "profile": "https://github.com/tom-m-galla",
+      "contributions": [
+        "code",
+        "test",
+        "review",
+        "maintenance",
+        "bug"
+      ]
+    },
+    {
       "login": "bluenick2k17",
       "name": "Nick Dunne",
       "avatar_url": "https://avatars1.githubusercontent.com/u/50033488?v=4",

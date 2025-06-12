@@ -262,7 +262,7 @@ export class ExportFactory {
         fileExtension: 'github.csv',
         storeOutside: false,
         writeFileHeader: (outputFile: string) => {
-          fs.writeFileSync(outputFile, `title,description,labels,state,assignee${EOL}`);
+          fs.writeFileSync(outputFile, `title,body,labels,state,assignee,priority,category${EOL}`);
         },
         handleData: (outputFile: string, row: CsvEntry): CsvEntry => {
           row = this.escapeCVSEntry(row);
@@ -273,18 +273,20 @@ export class ExportFactory {
           // use the title when provided but max 255 characters (as GitLab supports this length for titles), otherwise use the shortened description
           const title = row.title ? row.title.substring(0, 255) : descShort;
 
-          const fileRow = row.url ? `- file: [${row.filename}](${row.url})${EOL}` : `${row.filename}${EOL}`;
-          const linesRow = `- lines: ${row.lines}${EOL}`;
-          const shaRow = row.sha ? `- SHA: ${row.sha}${EOL}${EOL}` : '';
-          const commentSection = `## Comment${EOL}${row.comment}${EOL}`;
-          const additional = row.additional ? `## Additional information${EOL}${row.additional}${EOL}` : '';
-          const priority = row.priority ? `## Priority${EOL}${this.priorityName(row.priority)}${EOL}${EOL}` : '';
-          const category = row.category ? `## Category${EOL}${row.category}${EOL}${EOL}` : '';
-          const code = row.code ? `${EOL}## Source Code${EOL}${EOL}\`\`\`${EOL}${row.code}\`\`\`${EOL}` : '';
+          const desc_fileRow = row.url ? `- file: [${row.filename}](${row.url})${EOL}` : `${row.filename}${EOL}`;
+          const desc_linesRow = `- lines: ${row.lines}${EOL}`;
+          const desc_shaRow = row.sha ? `- SHA: ${row.sha}${EOL}${EOL}` : '';
+          const desc_commentSection = `## Comment${EOL}${row.comment}${EOL}`;
+          const desc_additional = row.additional ? `## Additional information${EOL}${row.additional}${EOL}` : '';
+          const desc_priority = row.priority ? `## Priority${EOL}${this.priorityName(row.priority)}${EOL}${EOL}` : '';
+          const desc_category = row.category ? `## Category${EOL}${row.category}${EOL}${EOL}` : '';
+          const desc_code = row.code ? `${EOL}## Source Code${EOL}${EOL}\`\`\`${EOL}${row.code}\`\`\`${EOL}` : '';
+          const priority = row.priority ? this.priorityName(row.priority) : '';
+          const category = row.category ? row.category : '';
 
-          const description = `${priority}${category}## Affected${EOL}${fileRow}${linesRow}${shaRow}${commentSection}${EOL}${additional}${code}`;
+          const description = `${desc_priority}${desc_category}## Affected${EOL}${desc_fileRow}${desc_linesRow}${desc_shaRow}${desc_commentSection}${EOL}${desc_additional}${desc_code}`;
 
-          fs.appendFileSync(outputFile, `"[code review] ${title}","${description}","code-review","open",""${EOL}`);
+          fs.appendFileSync(outputFile, `"[code review] ${title}","${description}","code-review","open","","${priority}","${category}"${EOL}`);
           return row;
         },
         handleEnd: (outputFile: string, _rows: CsvEntry[]) => {

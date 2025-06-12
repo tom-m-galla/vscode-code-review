@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [eb_1.33.2](https://github.com/d-koppenhagen/vscode-code-review/compare/v1.33.1...tom-m-galla:vscode-code-review:eb_v1.33.2) (2025-06-12)
+
+
+### Features
+
+* Added explicit columns for "category" and "priority" to github CSV export.
+
+### Bug Fixes
+
+* Wrong column name in export to GitHub importable CSV file ([#154](https://github.com/d-koppenhagen/vscode-code-review/issues/154))
+* Missing quoting/escaping of double quotes upon CSV export for github, gitlab, or JIRA import ([#158](https://github.com/d-koppenhagen/vscode-code-review/issues/158))
+
+
 ### [1.33.1](https://github.com/d-koppenhagen/vscode-code-review/compare/v1.33.0...v1.33.1) (2022-12-23)
 
 

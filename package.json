@@ -1,18 +1,18 @@
 {
-  "name": "vscode-code-review",
-  "displayName": "Code Review",
+  "name": "vscode-code-review-eb-fork",
+  "displayName": "Code Review (EB fork)",
   "description": "Create expert reviews / code reviews for a workspace that can be exported as a document for handing over to customers",
-  "version": "1.33.1",
-  "publisher": "d-koppenhagen",
-  "author": "Danny Koppenhagen <mail@d-koppenhagen.de> (https://k9n.dev)",
-  "homepage": "https://github.com/d-koppenhagen/vscode-code-review",
+  "version": "1.33.2",
+  "publisher": "tom-m-galla",
+  "author": "Thomas M. Galla <tom.m.galla@gmail.com> (Original Author: Danny Koppenhagen)",
+  "homepage": "https://github.com/tom-m-galla/vscode-code-review",
   "bugs": {
-    "url": "https://github.com/d-koppenhagen/vscode-code-review/issues",
-    "email": "mail@d-koppenhagen.de"
+    "url": "https://github.com/tom-m-galla/vscode-code-review/issues",
+    "email": "tom.m.galla@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/d-koppenhagen/vscode-code-review.git"
+    "url": "https://github.com/tom-m-galla/vscode-code-review.git"
   },
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
